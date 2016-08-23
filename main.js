@@ -2,6 +2,15 @@
 
 // Variable for turn
 var turn = true;
+
+// Empty arrays for selections
+var xSquares = [];
+var oSquares = [];
+
+// Empty arrays to track if player won
+var xWin = [];
+var oWin = [];
+
 // Setting squares to variables
 var s1 = document.getElementById('square1');
 var s2 = document.getElementById('square2');
@@ -17,8 +26,15 @@ var whosTurn = function() {
   if(turn == true){
     this.className+= ' x';
     turn = false;
+    xSquares = document.querySelectorAll('.x');
+    for(i=xSquares.length-1; i<xSquares.length; i++){
+      xWin.push(xSquares[i].id);
+    }
+    console.log('x was picked');
   } else {this.className+= ' o';
-   turn = true;
+    turn = true;
+    oSquares = document.querySelectorAll('.o');
+    console.log('y was picked');
  }
   }
 
