@@ -1,0 +1,57 @@
+/* Custom CSS by Garrett Estrin | Garrett.Estrin.com */
+
+body {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+.board {
+  width: 310px;
+  height: 310px;
+  margin: 100px auto;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  float: left;
+  font-family: impact;
+  font-size: 100px;
+  text-align: center;
+}
+
+/*Helper classes for borders*/
+
+.topborder {
+  border-top: solid black 1px;
+}
+
+.rightborder {
+  border-right: solid black 1px;
+}
+
+.bottomborder {
+  border-bottom: solid black 1px;
+}
+
+.leftborder {
+  border-left: solid black 1px;
+}
+
+p {
+  position: relative;
+  top: -55%;
+  transform: translateY(-50%);
+}
+
+.x {
+  background-image: url('./x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.o {
+  background-image: url('./o.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
