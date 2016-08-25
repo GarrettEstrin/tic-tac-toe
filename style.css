@@ -1,9 +1,10 @@
 /* Custom CSS by Garrett Estrin | Garrett.Estrin.com */
 
 body {
-  width: 400px;
+  width: 600px;
   height: 400px;
   margin: 0 auto;
+  color: black;
 }
 .board {
   width: 310px;
@@ -15,27 +16,38 @@ body {
   width: 100px;
   height: 100px;
   float: left;
-  font-family: impact;
+  font-family: Helvetica;
   font-size: 100px;
   text-align: center;
+}
+
+.message {
+  font-family: Helvetica;
+  font-size: 70px;
+  height: 50px;
+  margin: 40px auto;
+  text-align: center;
+  color: #e419bf;
+
+
 }
 
 /*Helper classes for borders*/
 
 .topborder {
-  border-top: solid black 1px;
+  border-top: solid lightgrey 1px;
 }
 
 .rightborder {
-  border-right: solid black 1px;
+  border-right: solid lightgrey 1px;
 }
 
 .bottomborder {
-  border-bottom: solid black 1px;
+  border-bottom: solid lightgrey 1px;
 }
 
 .leftborder {
-  border-left: solid black 1px;
+  border-left: solid lightgrey 1px;
 }
 
 p {
