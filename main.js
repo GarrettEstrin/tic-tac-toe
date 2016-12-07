@@ -43,76 +43,70 @@ var makeSelection = function() {
   }
 }
 
+function xWins(){
+  $message.text('Player X Wins!');
+  $sqrs.off('click');
+}
+
+function oWins(){
+  $message.text('Player Y Wins!');
+  $sqrs.off('click')
+}
+
 // Add click event listeners to boxes
 $sqrs.on('click', makeSelection)
 
 // Game win logic
 var winx = function(){
   if($picks[0] == 'x' && $picks[1] == 'x' && $picks[2] == 'x'){
-    $message.text('Player X Wins!');
-    $sqrs.off('click');
+    xWins()
   }
   else if ($picks[3] == 'x' && $picks[4] == 'x' && $picks[5] == 'x'){
-    $message.text('Player X Wins!');
-    $sqrs.off('click');
+    xWins()
   }
   else if ($picks[6] == 'x' && $picks[7] == 'x' && $picks[8] == 'x'){
-    $message.text('Player X Wins!');
-    $sqrs.off('click');
+    xWins()
   }
   else if ($picks[0] == 'x' && $picks[3] == 'x' && $picks[6] == 'x'){
-    $message.text('Player X Wins!');
-    $sqrs.off('click');
+    xWins()
   }
   else if ($picks[1] == 'x' && $picks[4] == 'x' && $picks[7] == 'x'){
-    $message.text('Player X Wins!');
-    $sqrs.off('click');
+    xWins()
   }
   else if ($picks[2] == 'x' && $picks[5] == 'x' && $picks[8] == 'x'){
-    $message.text('Player X Wins!');
-    $sqrs.off('click');
+    xWins()
   }
   else if ($picks[0] == 'x' && $picks[4] == 'x' && $picks[8] == 'x'){
-    $message.text('Player X Wins!');
-    $sqrs.off('click');
+    xWins()
   }
   else if ($picks[6] == 'x' && $picks[4] == 'x' && $picks[2] == 'x'){
-    $message.text('Player X Wins!');
-    $sqrs.off('click');
+    xWins()
   }
   }
 
 var wino = function(){
   if($picks[0] == 'o' && $picks[1] == 'o' && $picks[2] == 'o'){
-    $message.text('Player O Wins!');
-    $sqrs.off('click');
+    oWins()
   }
   else if ($picks[3] == 'o' && $picks[4] == 'o' && $picks[5] == 'o'){
-    $message.text('Player O Wins!');
-    $sqrs.off('click');
+    oWins()
   }
   else if ($picks[6] == 'o' && $picks[7] == 'o' && $picks[8] == 'o'){
-    $message.text('Player O Wins!');
-    $sqrs.off('click');
+    oWins()
   }
   else if ($picks[0] == 'o' && $picks[3] == 'o' && $picks[6] == 'o'){
-    $message.text('Player O Wins!');
-    $sqrs.off('click');
+    oWins()
   }
   else if ($picks[1] == 'o' && $picks[4] == 'o' && $picks[7] == 'o'){
-    $message.text('Player O Wins!');
-    $sqrs.off('click');
+    oWins()
   }
   else if ($picks[2] == 'o' && $picks[5] == 'o' && $picks[8] == 'o'){
-    $message.text('Player O Wins!');
-    $sqrs.off('click');
+    oWins()
   }
   else if ($picks[0] == 'o' && $picks[4] == 'o' && $picks[8] == 'o'){
-    $message.text('Player O Wins!');
-    $sqrs.off('click');
+    oWins()
   }
   else if ($picks[6] == 'o' && $picks[4] == 'o' && $picks[2] == 'o'){
-    $message.text('Player O Wins!');
-    $sqrs.off('click');
+    oWins()
   }
   }

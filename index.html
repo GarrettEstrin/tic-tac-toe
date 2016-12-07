@@ -7,10 +7,13 @@
     <meta charset="utf-8">
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8">
-    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!-- <script src="./jquery.js"</script> -->
   </head>
   <body>
-    <div class="message"></div>
+    <div class="message" id="id"><img src="./catwithstrings.jpg" /></div>
+    <div id="playerXWins" class="scoreBoard">
+      <h2>Player X Wins</h2>
+    </div>
 
 <div class="board">
   <div id="box1" data-box="1" class="square bottomborder rightborder"></div>
@@ -23,7 +26,15 @@
   <div id="box8" data-box="8" class="square topborder"></div>
   <div id="box9" data-box="9" class="square topborder leftborder"></div>
 </div>
+<div id="playerOWins" class="scoreBoard">
+  <h2>Player O Wins</h2>
+</div>
 
-    <script src="main.js" charset="utf-8"></script>
+<div class="button">
+  <button type="button" class="resetGameBtn" id="resetGameBtn">Play New Game</button>
+</div>
+
+
+    <script src="main0.js" charset="utf-8"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 /* Custom CSS by Garrett Estrin | Garrett.Estrin.com */
 
 body {
-  width: 600px;
+  width: 800px;
   height: 400px;
   margin: 0 auto;
   color: black;
@@ -10,6 +10,7 @@ body {
   width: 310px;
   height: 310px;
   margin: 100px auto;
+  float: left;
 }
 
 .square {
@@ -28,8 +29,6 @@ body {
   margin: 40px auto;
   text-align: center;
   color: #e419bf;
-
-
 }
 
 /*Helper classes for borders*/
@@ -50,6 +49,20 @@ body {
   border-left: solid lightgrey 1px;
 }
 
+.resetGameBtn {
+  width: 120px;
+  height: 30px;
+  background-color: red;
+  border: solid black 5px;
+  border-radius: 5px;
+  display: none;
+}
+
+.button {
+  clear: both;
+  text-align: center;
+}
+
 p {
   position: relative;
   top: -55%;
@@ -66,4 +79,25 @@ p {
   background-image: url('./o.png');
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.scoreBoard {
+  text-align: center;
+  float: left;
+  margin-top: 35px;
+  /*border: solid black 1px;*/
+  height: 100px;
+  padding: 10px;
+}
+
+#playerOWins {
+  margin-left: 50px;
+}
+
+#playerXWins {
+  margin-right: 50px;
+}
+
+img {
+  display: none;
 }
